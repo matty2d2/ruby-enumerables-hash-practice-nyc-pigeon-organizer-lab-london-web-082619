@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   hash = {}
 
   data.each do |first_level, all_other| 
-    all_other.each do |category, array|
+    all_other.each do |attribute, array|
       array.each do |name|
         hash[name] = {:color => [], :gender => [], :lives => []} 
       end 
